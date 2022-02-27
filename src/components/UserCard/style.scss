@@ -1,0 +1,35 @@
+@import '../../variables.scss';
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 200ms;
+  cursor: pointer;
+  
+  .userImg {
+    width: 7rem;
+    height: 7rem;
+    border: 2px solid transparent;
+    border-radius: 0.25rem;
+  }
+
+  .userName {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-top: 0.75rem;
+    color: $text;
+    vertical-align: bottom;
+  }
+
+  &:hover {
+    .userName {
+      color: $white;
+    }
+
+    .userImg {
+      border-color: $white;
+    }
+  }
+}
